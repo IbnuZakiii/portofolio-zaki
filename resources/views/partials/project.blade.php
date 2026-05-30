@@ -2,9 +2,9 @@
 <section id="projects" class="py-24 px-6 bg-gradient-to-b from-transparent to-purple-50/30 dark:to-purple-900/10">
     <div class="container mx-auto max-w-6xl">
         <div class="text-center mb-16 reveal">
-            <h2 class="text-4xl md:text-5xl font-bold mb-4">Project <span class="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">Saya</span></h2>
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">My <span class="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">Projects</span></h2>
             <div class="w-24 h-1 bg-gradient-to-r from-purple-600 to-pink-600 mx-auto rounded-full"></div>
-                <p class="text-gray-600 dark:text-gray-400 mt-4 max-w-2xl mx-auto">Beberapa karya terbaik saya yang menampilkan keterampilan dan minat saya.</p>
+                <p class="text-gray-600 dark:text-gray-400 mt-4 max-w-2xl mx-auto">A few of my best works that showcase my skills and interests.</p>
             </div>
         
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -38,7 +38,7 @@
         
         <div class="text-center mt-12 reveal">
             <a href="#" class="inline-flex items-center space-x-2 px-6 py-3 rounded-full border-2 border-purple-600 text-purple-600 dark:text-purple-400 hover:bg-purple-600 hover:text-white transition-all">
-                <span>Lihat Semua Project</span>
+                <span>View All Projects</span>
                 <i class="fas fa-arrow-right"></i>
             </a>
         </div>

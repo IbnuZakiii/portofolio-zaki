@@ -14,7 +14,8 @@ class PortfolioController extends Controller
         $user = [
             'name' => 'Portfolio Muhammad Ibnu Zaki Munandar',
             'title' => 'Web Developer • Software Engineer • Web Designer |Fresh Graduate SMK ADI SANGGORO',
-            'short_bio' => 'Berfokus pada pembuatan aplikasi web yang modern, efisien, dan mudah digunakan.',
+            'short_bio' => '
+Focused on creating modern, efficient, and easy-to-use web applications.',
             'about' => "Saya adalah lulusan SMK jurusan Rekayasa Perangkat Lunak yang memiliki minat besar dalam bidang Web Development dan Software Engineering. Saya berpengalaman membangun berbagai aplikasi berbasis web menggunakan Laravel, PHP, MySQL, Bootstrap, dan Tailwind CSS.
 
 Saya pernah mengembangkan project seperti sistem absensi, booking lapangan, dan website pemesanan makanan. Selain itu, saya juga memiliki pengalaman PKL dan dipercaya untuk bekerja sama dalam pengembangan website di perusahaan.",

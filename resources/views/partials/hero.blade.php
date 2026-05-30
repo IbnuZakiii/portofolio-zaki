@@ -21,10 +21,10 @@
         
         <div class="flex flex-wrap justify-center gap-4">
             <a href="#contact" class="px-8 py-3 rounded-full gradient-bg text-white font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300">
-                <i class="fas fa-paper-plane mr-2"></i> Hubungi Saya
+                <i class="fas fa-paper-plane mr-2"></i> Contact Me
             </a>
             <a href="#projects" class="px-8 py-3 rounded-full border-2 border-purple-600 text-purple-600 dark:text-purple-400 font-semibold hover:bg-purple-600 hover:text-white transition-all duration-300">
-                <i class="fas fa-eye mr-2"></i> Lihat Project
+                <i class="fas fa-eye mr-2"></i> View Projects
             </a>
         </div>
         

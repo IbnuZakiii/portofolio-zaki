@@ -2,9 +2,9 @@
 <section id="certificates" class="py-24 px-6 bg-gradient-to-b from-transparent to-purple-50/30 dark:to-purple-900/10">
     <div class="container mx-auto max-w-6xl">
         <div class="text-center mb-16 reveal">
-            <h2 class="text-4xl md:text-5xl font-bold mb-4">Sertifikat <span class="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent"> Saya</span></h2>
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">My <span class="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">Certificates</span></h2>
             <div class="w-24 h-1 bg-gradient-to-r from-purple-600 to-pink-600 mx-auto rounded-full"></div>
-            <p class="text-gray-600 dark:text-gray-400 mt-4 max-w-2xl mx-auto">Sertifikasi dan prestasi profesional yang memvalidasi kemampuan saya.</p>
+            <p class="text-gray-600 dark:text-gray-400 mt-4 max-w-2xl mx-auto">Certifications and professional achievements that validate my skills.</p>
         </div>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -47,7 +47,7 @@
 
         <div class="text-center mt-12 reveal">
             <a href="#" class="inline-flex items-center gap-2 px-6 py-3 rounded-full border-2 border-purple-600 text-purple-600 dark:text-purple-400 font-semibold hover:bg-purple-600 hover:text-white dark:hover:text-white transition-all duration-300 shadow-md hover:shadow-purple-500/25">
-                <span>Lihat Semua Kredensial</span>
+                <span>View All Credentials</span>
                 <i class="fas fa-arrow-right"></i>
             </a>
         </div>
