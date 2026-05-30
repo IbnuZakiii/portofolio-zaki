@@ -50,7 +50,7 @@ Membangun Portfolio Laravel'
             [
                 'title' => 'Ehub one stop logistics',
                 'description' => 'Platform marketplace logistik yang menghubungkan layanan pengiriman dan manajemen distribusi dalam satu sistem.',
-                'tech' => ['Laravel 11', 'MySQL'],
+                'tech' => ['Laravel', 'MySQL'],
                 'image' => asset('images/ehub.png'),
                 'demo_url' => '#',
                 'code_url' => '#'
@@ -71,7 +71,7 @@ Membangun Portfolio Laravel'
             'title' => 'Panitia Sekretaris',
             'issuer' => 'REPLIKAS SPORTIVITAS',
             'year' => '2026',
-            'image' => 'https://placehold.co/600x400/1e1e2f/ffffff?text=Laravel+Cert',
+            'image' => asset('images/sertifrep.jpeg'),
             'verify_url' => '#',
             'description' => 'Sertifikat sebagai Panitia Sekretaris dalam acara REPLIKAS SPORTIVITAS 2026'
         ],
@@ -79,7 +79,7 @@ Membangun Portfolio Laravel'
             'title' => 'Informatika',
             'issuer' => 'OSSI Prov. Jawa Barat',
             'year' => '2025',
-            'image' => 'https://placehold.co/600x400/1e1e2f/ffffff?text=JS+Cert',
+            'image' => asset('images/sertif.jpeg'),
             'verify_url' => '#',
             'description' => 'Olimpiade Sains Siswa Indonesia dengan bidang Informatika Peraih Mendali Perak'
         ],

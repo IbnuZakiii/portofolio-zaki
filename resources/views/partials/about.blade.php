@@ -38,7 +38,7 @@
             <div class="grid grid-cols-2 gap-6 reveal">
                 <div class="glass p-6 text-center rounded-xl hover-glow transition-all">
                     <i class="fas fa-laptop-code text-4xl text-purple-500 mb-3"></i>
-                    <h3 class="text-3xl font-bold">5+</h3>
+                    <h3 class="text-3xl font-bold">3+</h3>
                     <p class="text-gray-600 dark:text-gray-400">Project Selesai</p>
                 </div>
                 <div class="glass p-6 text-center rounded-xl hover-glow transition-all">

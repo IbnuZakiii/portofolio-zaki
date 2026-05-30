@@ -9,36 +9,44 @@
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             @foreach($certificates as $index => $cert)
-            <div class="group glass rounded-2xl overflow-hidden hover-glow transition-all duration-300 reveal" style="transition-delay: {{ $index * 0.1 }}s">
-                <div class="relative overflow-hidden h-48">
-                    <img src="{{ $cert['image'] }}" alt="{{ $cert['title'] }}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-end p-3">
-                        <a href="{{ $cert['verify_url'] }}" target="_blank" class="px-3 py-1 bg-white/20 backdrop-blur rounded-lg text-white text-xs hover:bg-white/30 transition">
+            <div class="group glass rounded-2xl overflow-hidden hover-glow transition-all duration-300 reveal flex flex-col h-full" style="transition-delay: {{ $index * 0.1 }}s">
+                {{-- AREA GAMBAR YANG DIRAPIHKAN --}}
+                <div class="relative w-full bg-gray-200 dark:bg-gray-800 overflow-hidden" style="aspect-ratio: 4 / 3;">
+                    <img src="{{ $cert['image'] }}" alt="{{ $cert['title'] }}" class="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500">
+                    
+                    {{-- Badge tahun di pojok kanan atas --}}
+                    <span class="absolute top-3 right-3 z-10 text-xs font-bold px-2.5 py-1 rounded-full bg-purple-600/90 text-white shadow-md backdrop-blur-sm">
+                        {{ $cert['year'] }}
+                    </span>
+
+                    {{-- Overlay verifikasi saat hover --}}
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-end p-3">
+                        <a href="{{ $cert['verify_url'] }}" target="_blank" class="px-3 py-1.5 bg-white/20 backdrop-blur-md rounded-lg text-white text-sm font-medium hover:bg-white/30 transition shadow-lg">
                             <i class="fas fa-check-circle mr-1"></i> Verify
                         </a>
                     </div>
                 </div>
-                <div class="p-5">
-                    <div class="flex justify-between items-start mb-2">
-                        <h3 class="text-lg font-bold text-gray-800 dark:text-white line-clamp-1">{{ $cert['title'] }}</h3>
-                        <span class="text-xs font-semibold px-2 py-1 rounded-full bg-purple-100 dark:bg-purple-900/50 text-purple-700 dark:text-purple-300">{{ $cert['year'] }}</span>
-                    </div>
-                    <p class="text-sm text-purple-600 dark:text-purple-400 mb-2">
-                        <i class="fas fa-building mr-1"></i> {{ $cert['issuer'] }}
+
+                {{-- KONTEN CARD --}}
+                <div class="p-5 flex flex-col flex-grow">
+                    <h3 class="text-xl font-bold text-gray-800 dark:text-white line-clamp-1 mb-1">{{ $cert['title'] }}</h3>
+                    <p class="text-sm text-purple-600 dark:text-purple-400 mb-3 flex items-center gap-1">
+                        <i class="fas fa-building text-xs"></i> {{ $cert['issuer'] }}
                     </p>
-                    <p class="text-sm text-gray-600 dark:text-gray-400 line-clamp-2">{{ $cert['description'] }}</p>
-                </div>
-                <div class="px-5 pb-5">
-                    <a href="{{ $cert['verify_url'] }}" target="_blank" class="inline-flex items-center text-sm text-purple-600 dark:text-purple-400 hover:text-purple-800 dark:hover:text-purple-300 transition">
-                        Verifikasi Sertifikat <i class="fas fa-arrow-right ml-1 text-xs"></i>
-                    </a>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 line-clamp-2 mb-4 flex-grow">{{ $cert['description'] }}</p>
+                    
+                    <div class="mt-auto pt-2">
+                        <a href="{{ $cert['verify_url'] }}" target="_blank" class="inline-flex items-center gap-2 text-sm font-medium text-purple-600 dark:text-purple-400 hover:text-purple-800 dark:hover:text-purple-300 transition border-b border-purple-200 dark:border-purple-800 hover:border-purple-600 pb-0.5">
+                            Verifikasi Sertifikat <i class="fas fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
             @endforeach
         </div>
 
         <div class="text-center mt-12 reveal">
-            <a href="#" class="inline-flex items-center space-x-2 px-6 py-3 rounded-full border-2 border-purple-600 text-purple-600 dark:text-purple-400 hover:bg-purple-600 hover:text-white transition-all">
+            <a href="#" class="inline-flex items-center gap-2 px-6 py-3 rounded-full border-2 border-purple-600 text-purple-600 dark:text-purple-400 font-semibold hover:bg-purple-600 hover:text-white dark:hover:text-white transition-all duration-300 shadow-md hover:shadow-purple-500/25">
                 <span>Lihat Semua Kredensial</span>
                 <i class="fas fa-arrow-right"></i>
             </a>
@@ -58,5 +66,19 @@
         -webkit-line-clamp: 2;
         -webkit-box-orient: vertical;
         overflow: hidden;
+    }
+    .glass {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(2px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    }
+    .dark .glass {
+        background: rgba(30, 30, 40, 0.6);
+        border-color: rgba(255, 255, 255, 0.1);
+    }
+    .hover-glow:hover {
+        box-shadow: 0 10px 30px -10px rgba(139, 92, 246, 0.4);
+        transform: translateY(-4px);
     }
 </style>
