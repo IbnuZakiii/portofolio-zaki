@@ -1,0 +1,5 @@
+{
+    "schema": "https://json.schemastore.org/railpack",
+    "provider": "php",
+    "phpVersion": "8.3"
+}
